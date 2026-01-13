@@ -1,0 +1,104 @@
+:root {
+    /* Color principal */
+    --color-primary-base: #007bff;
+    --color-primary-custom: #1a4d93;
+    --color-complementary-custom: #ff8c00; 
+    --color-complementary-light: #ffc266;
+    /* Colores de gravedad */
+    --color-critical: #8b0000;
+}
+
+/* Estilos de encabezado y boton principal */
+.evaluaciones-header {
+    color: var(--color-primary-custom);
+    font-weight: 700;
+}
+
+.btn-custom-action {
+    background-color: var(--color-complementary-custom);
+    border-color: var(--color-complementary-custom);
+    font-weight: 600;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-custom-action:hover {
+    background-color: #ff981a;
+    border-color: #ff981a;
+}
+
+/* Estilo para el boton de editar */
+.btn-custom-edit {
+    background-color: var(--color-primary-base);
+    border-color: var(--color-primary-base);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-custom-edit:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: white;
+}
+
+/* Barra de busqueda */
+.search-bar .input-group-text {
+    color: var(--color-primary-custom);
+}
+
+/* Fila de encabezados de lista */
+.row-header {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 2px solid var(--color-primary-base);
+    margin-bottom: 10px;
+}
+
+/* Estilos de la tarjeta de evaluacion */
+.eval-card {
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 12px;
+    border-left: 5px solid var(--color-primary-base);
+}
+.eval-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Cuerpo de la tarjeta */
+.eval-card-body {
+    padding: 1rem;
+    position: relative;
+}
+
+/* Color para la gravedad critica */
+.bg-critical {
+    background-color: var(--color-critical) !important;
+    color: white !important;
+}
+
+/* Estilo del icono toggle */
+.toggle-icon {
+    transition: transform 0.3s ease-in-out;
+    color: var(--color-complementary-custom) !important;
+    font-size: 1.2rem;
+}
+.eval-card-body[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+.eval-card-body[aria-expanded="true"] {
+    border-bottom: 0 !important;
+}
+
+/* Otros colores de texto */
+.text-custom-primary {
+    color: var(--color-primary-custom) !important;
+}
+
+@media (max-width: 991.98px) {
+    .eval-card-body > div {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}

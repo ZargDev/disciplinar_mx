@@ -1,0 +1,19 @@
+#Python 3.13.5
+
+# Manipulación de datos
+pandas>=2.2.3
+numpy>=2.1.0
+
+# Inteligencia Artificial / Machine Learning
+scikit-learn>=1.7.2
+joblib>=1.3.2
+
+# Conexión a Base de Datos MySQL
+mysql-connector-python>=9.0.0
+SQLAlchemy>=2.0.36
+
+# Manejo de variables de entorno (para leer el .env)
+python-dotenv>=1.1.0
+
+# Necesario para generar datos ficticios (nombres, fechas, etc.)
+faker>=25.0.0

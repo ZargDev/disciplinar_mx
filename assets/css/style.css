@@ -1,0 +1,26 @@
+.fila-alumno {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.fila-alumno.table-active {
+    background-color: #f8f9fa; 
+    font-weight: bold;
+}
+
+/* Ocultar la columna de acciones por defecto */
+.tabla-alumnos .acciones {
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transición suave */
+    width: 1%; /* Para evitar que la columna ocupe espacio innecesario */
+    white-space: nowrap;
+}
+
+/* Mostrar la columna de acciones al pasar el ratón sobre la fila */
+.tabla-alumnos tr.fila-alumno:hover .acciones {
+    opacity: 1;
+}
+
+/* Estilo para que el cursor cambie al pasar sobre la fila */
+.tabla-alumnos tr.fila-alumno {
+    cursor: default;
+}
